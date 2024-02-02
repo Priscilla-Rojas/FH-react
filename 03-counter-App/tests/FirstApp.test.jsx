@@ -10,16 +10,21 @@ describe('Pruebas en <FirstApp/>', () => {
   //   expect ( container ).toMatchSnapshot();
   // })
   
-  test('debe mostrar el titulo en un H1', () => {
+  // test('debe mostrar el titulo en un H1', () => {
+  //   const title= 'I am title';
+  //   const {getByText, getByTestId} =  render( <FirstApp title={title}/> )
+  //   expect( getByText( title )).toBeTruthy(); 
+
+  //   expect( getByTestId( 'test-title').innerHTML).toBe( title)
+
+  // })
+
+  test('debe mostrar el subtitulo enviado por props', () => {
     const title= 'I am title';
-    const { container, getByText } =  render( <FirstApp title={title}/> )
-    expect( getByText( title )).toBeTruthy(); // verifico que exista el texto 'I am title'
-    // const h1 = container.querySelector('h1');
-    // expect( h1.innerHTML).toContain( title );
-
-
-
-
-
+    const subTitle= 'I am subTitle';
+    const {getByText} =  render( 
+      <FirstApp title={title} subtitle={subTitle}/> 
+    )
+    expect( getByText(subTitle)).toBeTruthy(); 
   })
 })
