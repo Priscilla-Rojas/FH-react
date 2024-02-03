@@ -24,7 +24,7 @@ describe('Pruebas en <FirstApp/>', () => {
   test('debe mostrar el titulo en un H1', () => {
     
     render( <FirstApp title={title}/> )
-    expect( screen.getByRole( 'heading', { leavel: 1 } ).innerHTML).toContain(title);
+    expect( screen.getByRole( 'heading', { level: 1 } ).innerHTML).toContain(title);
 
   })
 
