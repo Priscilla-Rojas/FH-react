@@ -7,6 +7,7 @@ const FirstApp = ( {name, title, subtitle} ) => {
     <>
       <h1 data-testid='test-title'>{ title }</h1>
       <p>{ subtitle }</p>
+      <p>{ subtitle }</p>
       <p>{ name }</p>
     </>
   )

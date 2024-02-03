@@ -7,7 +7,7 @@ FirstApp
 
 ReactDom.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    {/* <CounterApp value={ 0 }></CounterApp> */}
-    <FirstApp></FirstApp>
+    <CounterApp value={ 0 }></CounterApp>
+    {/* <FirstApp></FirstApp> */}
   </React.StrictMode>
 )
